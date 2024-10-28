@@ -1,0 +1,171 @@
+/* Add this to your main CSS file or within a <style> tag in your HTML */
+body {
+  margin: 0;
+  
+  background-color: black; /* Black background */
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-flow:column;
+}
+.bold {
+  font-weight: 900;
+}
+* {
+  font-family: 'Mulish';
+  color:white;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header-text {
+  font-family: "Bodoni Moda", serif;
+}
+.logo {
+  span {
+    font-size: 1.5rem;
+  }
+
+}
+nav {
+  display: flex;  
+  width:100%;
+  padding: 10px;
+  justify-content:space-between;
+
+  div.nav{
+    text-align:right;
+
+    a {
+      margin-right:10px;
+      color:#9e0000;
+      text-decoration:none;
+      font-weight:bold;
+      text-transform:uppercase;
+
+    }
+  }
+}
+
+// Primary container 
+.container-primary-text {
+  position: relative;
+  display: grid;
+
+  img.background {
+    position: absolute;
+    z-index: 0;
+    max-width:650px;
+    margin:0 auto;
+    left:50%;
+    top:80%;    
+    transform: translate(-50%, -50%);
+  }
+  img.subject {
+    position: absolute;
+    z-index: 0;
+    max-width:350px;
+    margin:0 auto;
+    left:50%;
+    top:40%;    
+    transform: translate(-50%, -50%);
+  }
+
+
+  h1 {
+    font-size: 6.5rem;
+    text-align: center;
+    position: relative;
+    margin-bottom:0px;
+    top:60%;
+    
+  }
+  p {
+    position: relative;
+    top:190%;
+  }
+}
+.mw-800 {
+  max-width: 800px;
+  margin:auto;
+}
+p.text-footer {
+  position: absolute;
+  bottom: -75%;
+  color:#9e0000;
+  letter-spacing:3px;
+  font-size:10px;
+  font-weight:bold;
+  left:50%;  
+  transform: translateX(-50%);
+  max-width:650px;
+  text-align:center;
+  line-height:20px;
+
+
+  em {
+    color:#9e0000
+  }
+}
+
+p.text-project {
+  position: absolute;
+  transform: rotate(-90deg);
+  top:50vh;
+  left:-4rem;
+  color:white;
+  width:200px;
+  height:45px;
+ text-transform:uppercase;
+
+  // transform:  rotateX(90%);
+
+}
+.mobile {
+  display: none;
+}
+@media(max-width:1100px){
+  .mobile {
+    display: block;
+    text-align:right;
+  }
+.desktop {
+  display: none;
+}
+h1 {
+  font-size:3rem!important;
+}
+.container-primary-text {
+  p.split {
+    background:black;
+    text-align:center;
+    font-size:12px;
+    padding:20px;
+    z-index: 2;
+    margin-bottom:15px;
+  }
+ 
+}
+p.text-footer{
+  text-align: center;
+  margin:0 auto;
+  left:50%;
+  transform: translateX(-50%);
+  font-size:9px;
+  padding:20px;
+  z-index: 2;
+}
+p.text-project {
+  background:black;
+  width:100%;
+  left:-46%;
+  text-align:center;
+  top:88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:8px;
+}
+}
+
+
